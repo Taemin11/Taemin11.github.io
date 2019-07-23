@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Taemin's github.io"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Taemin"
+name                     : "Taemin11"
 description              : "An amazing website."
 url                      : "Taemin11.github.io"
 baseurl                  : ""
@@ -107,7 +107,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Taemin ha"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "" #소개
   location         : "Somewhere"
