@@ -10,9 +10,8 @@ theme : https://github.com/mmistakes/minimal-mistakes
 
 sample porducer code:
 
-'''java
-	public static void main(String[] args) {
-		SimpleProducerPool s = new SimpleProducerPool();
-		s.init();
-	}
-'''
+​```python
+def print_hi(name):
+  print("hello", name)
+print_hi('Tom')
+​```
