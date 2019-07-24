@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Jekyll!"
 date: 2019-07-23 15:57
-categories: jekyll update
+categories: JavaFramework
 ---
 
 refer : 
