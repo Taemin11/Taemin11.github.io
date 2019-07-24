@@ -16,7 +16,7 @@ categories: java frameworks
 ## 주키퍼 설치
 
    
-[링크 클릭](http://www.apache.org/dyn/closer.cgi/zookeeper/){: target="_blank"} -> 공식 다운로드 사이트 or 미러 사이트 에서 zookeeper 압축 파일 다운로드 ->  
+[링크 클릭](http://www.apache.org/dyn/closer.cgi/zookeeper/){ -> 공식 다운로드 사이트 or 미러 사이트 에서 zookeeper 압축 파일 다운로드 ->  
    
 ![zookeeper-install-1](https://user-images.githubusercontent.com/50867723/61754939-5a48fd80-adf0-11e9-8fcb-bb3ac0abd773.png)
    
