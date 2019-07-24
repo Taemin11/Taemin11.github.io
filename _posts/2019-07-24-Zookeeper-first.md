@@ -46,7 +46,7 @@ ex) dataDir=C:\dev\zookeeper-3.4.14\data
    
 ### 명령 프롬프트로 실행
    
-시작 -> 검색 -> cmd 입력 ->zookeeper 다운로드 경로 ( cd {경로} ) 입력 -> zkServer.cmd 실행
+시작 -> 검색 -> cmd 입력 ->zookeeper 다운로드 경로 ( cd {경로} ) 입력 -> zkServer.cmd 실행  
 ![zookeeper-install-6](https://user-images.githubusercontent.com/50867723/61755652-83b75880-adf3-11e9-934d-8836ed760e01.png)
    
 ### 실행이 안 될 경우
