@@ -1,15 +1,9 @@
-<header class="site-category">
-  <ul>
-    
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "category" %}
-          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    
-</ul>
-</header>
+<div class="site-category">
+    <ul class='cat1'>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">Java</a>
+        <ul>
+            <li><a href="/Java/Framework">Framework</a></li>            
+        </ul>    
+    </ul>
+  </div>
