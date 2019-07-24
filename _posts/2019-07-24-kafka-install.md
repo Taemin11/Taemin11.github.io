@@ -13,13 +13,13 @@ categories: Java/Framework
 >+ [4. 카프카 예제](#카프카-예제)
 >    * [4 - 1. 카프카 토픽 생성](#카프카-토픽-생성)
 >    * [4 - 2. 카프카 토픽 리스트 조회](#카프카-토픽-리스트-조회)
->    * [4 - 3. 카프카 컨슈머 실행)(#카프카-컨슈머-실행)
->    * [4 - 4. 카프카 프로듀서 실행](#카프카-프로듀서-실행)
+>    * [4 - 3. 카프카 consumer 실행)(#카프카-consumer-실행)
+>    * [4 - 4. 카프카 producer 실행](#카프카-producer-실행)
 >+ [5. 메이븐과 이클립스를 이용한 카프카 클러스터 구축](#메이븐과-이클립스를-이용한-카프카-클러스터-구축)
 >    * [5 - 1. 프로젝트 생성](#프로젝트-생성)
 >    * [5 - 2. dependency 추가](#dependency-추가)
 >    * [5 - 3. 컨슈머 작성)(#컨슈머-작성)
->    * [5 - 4. 프로듀서 작성](#프로듀서-작성)
+>    * [5 - 4. producer 작성](#producer-작성)
 >    * [5 - 5. 실행](#실행)
 
   
@@ -76,13 +76,13 @@ bin\windows\kafka-topics.bat --list --zookeeper localhost:2181 입력
   
 ![kafka-install-6](https://user-images.githubusercontent.com/50867723/61767480-584a6300-ae1f-11e9-9c9f-d1f5fbcd6051.png)  
    
-### 카프카 컨슈머 실행
+### 카프카 consumer 실행
   
 bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test20190715 입력   
    
 ![kafka-install-7](https://user-images.githubusercontent.com/50867723/61767485-5b455380-ae1f-11e9-9a79-160200f53d9f.png)  
 
-### 카프카 프로듀서 실행
+### 카프카 producer 실행
   
 주키퍼, 카프카, 컨슈머 cmd창 유지한 채로 새로운 cmd 실행 ->  
 kafka 설치 경로로 이동 ( ex) cd C:\dev\kafka_2.11-1.1.0) ->  
@@ -125,7 +125,7 @@ pom.xml에 의존성 추가 -> 저장 ->
 	</dependency>
 '''  
   
-### 컨슈머 작성
+### consumer 작성
   
 >consumer code와 producer code는 황준일님 블로그에서 [https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart) 퍼왔습니다.
 
@@ -164,7 +164,7 @@ public class Consumer {
 }
 '''  
   
-### 프로듀서 작성
+### producer 작성
   
 '''
 package com.test.kafka.meta;
