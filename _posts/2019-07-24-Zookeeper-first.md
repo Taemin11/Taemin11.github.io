@@ -38,9 +38,9 @@ C:\dev\zookeeper-3.4.14\conf 경로에 있는 zoo_sample.cfg 복사 붙이기 ->
 ![zookeeper-install-4](https://user-images.githubusercontent.com/50867723/61755614-65515d00-adf3-11e9-9b51-cb20dd9e239d.png)
    
 zoo.cfg를 notepad++ 나 메모장 같은 텍스트 편집기를 이용하여 오픈 -> data 경로 추가  
-ex) dataDir=C:\dev\zookeeper-3.4.14\data
+>ex) dataDir=data
    
-![zookeeper-install-5](https://user-images.githubusercontent.com/50867723/61755624-726e4c00-adf3-11e9-9e52-aeab18b4dee5.png)
+![zookeeper-install-5](https://user-images.githubusercontent.com/50867723/61777346-b4b97c80-ae37-11e9-9eb8-f50e4a66881c.png)
    
 ## 주키퍼 실행
    
