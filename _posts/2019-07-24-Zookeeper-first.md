@@ -4,7 +4,7 @@ date: 2019-07-24 08:42
 categories: java frameworks
 ---
 
-#Windows 환경에서 Zookeeper 설치 및 실행
+# Windows 환경에서 Zookeeper 설치 및 실행
 
 목차  
 >+ [1. 주키퍼 설치](#주키퍼-설치)  
@@ -15,7 +15,7 @@ categories: java frameworks
 
   
   
-##주키퍼 설치
+## 주키퍼 설치
 
 
 http://www.apache.org/dyn/closer.cgi/zookeeper/ 링크 클릭 -> 공식 다운로드 사이트 or 미러 사이트 에서 zookeeper 압축 파일 다운로드 -> 
@@ -27,11 +27,11 @@ http://www.apache.org/dyn/closer.cgi/zookeeper/ 링크 클릭 -> 공식 다운�
 
 ![zookeeper-install-2](https://user-images.githubusercontent.com/50867723/61755010-a98f2e00-adf0-11e9-9b6a-a2da9cde7ae4.png)
 
-##주키퍼 설정
+## 주키퍼 설정
 
-##주키퍼 실행
+## 주키퍼 실행
 
-##명령 프롬프트로 실행
+## 명령 프롬프트로 실행
 
-##실행이 안 될 경우
+## 실행이 안 될 경우
 
