@@ -28,9 +28,10 @@ categories: Java/Framework
 ## 주키퍼 설정
    
 설치 경로확인 ->   
-ex) C:\dev\zookeeper-3.4.14   
+>ex) C:\dev\zookeeper-3.4.14   
+
 data 경로 생성 ->   
-ex) C:\dev\zookeeper-3.4.14\data
+>ex) C:\dev\zookeeper-3.4.14\data
    
 ![zookeeper-install-3](https://user-images.githubusercontent.com/50867723/61755589-4d79d900-adf3-11e9-9dc0-03876953b009.png)
    
