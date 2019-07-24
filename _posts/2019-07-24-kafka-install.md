@@ -56,6 +56,7 @@ Zookeeper 실행 ->
 주키퍼 cmd창 유지한 채로 새로운 cmd 실행 ->   
 kafka 설치 경로로 이동 ->   
 >ex) cd C:\dev\kafka_2.11-1.1.0   
+
 bin\windows\kafka-server-start.bat config\server.properties 입력 ->   
   
 ![kafka-install-4](https://user-images.githubusercontent.com/50867723/61767464-4ec0fb00-ae1f-11e9-8cb9-ce56fce75288.png)  
