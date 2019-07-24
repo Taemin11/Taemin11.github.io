@@ -207,6 +207,6 @@ pom.xml에 의존성 추가 -> 저장 ->
 
 주키퍼 실행 -> 카프카 실행 -> 컨슈머 실행 -> 프로듀서 실행
   
-[!kafka-install-11](https://user-images.githubusercontent.com/50867723/61768455-7e253700-ae22-11e9-8342-66ded6327086.png)  
+![kafka-install-11](https://user-images.githubusercontent.com/50867723/61768455-7e253700-ae22-11e9-8342-66ded6327086.png)  
 
 
