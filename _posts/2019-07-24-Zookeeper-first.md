@@ -1,7 +1,7 @@
 ---
 title: "Windows 환경에서 Zookeeper 설치 및 실행"
 date: 2019-07-24 08:42
-categories: JavaFramework
+categories: Java/Framework
 ---
 
 목차  
