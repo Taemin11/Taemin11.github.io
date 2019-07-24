@@ -35,7 +35,9 @@ categories: Java/Framework
 ## 카프카 설정
    
 설치 경로확인 ->   
-디렉토리 config로 이동 ( ex) C:\dev\kafka_2.11-1.1.0\config) ->   
+디렉토리 config로 이동->   
+>ex) C:\dev\kafka_2.11-1.1.0\config)  
+
 server.properties 파일 텍스트 편집기로 오픈 ->  
 log.dirs=/tmp/kafka-logs 를 카프카 설치 경로로 변경 ->  
 >ex ) log.dirs=C:\\dev\\kafka_2.11-1.1.0\\logs  
@@ -66,7 +68,9 @@ bin\windows\kafka-server-start.bat config\server.properties 입력 ->
 ### 카프카 토픽 생성
    
 주키퍼, 카프카 실행한 상태에서 새로운 cmd 실행 ->   
-kafka 설치 경로로 이동 ( ex) cd C:\dev\kafka_2.11-1.1.0) ->   
+kafka 설치 경로로 이동 ->   
+>ex) cd C:\dev\kafka_2.11-1.1.0)   
+  
 bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test20190715 입력   
    
 ![kafka-install-5](https://user-images.githubusercontent.com/50867723/61767476-54b6dc00-ae1f-11e9-80d8-9f711cd8faf2.png)  
@@ -86,7 +90,9 @@ bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic
 ### producer 실행
   
 주키퍼, 카프카, 컨슈머 cmd창 유지한 채로 새로운 cmd 실행 ->  
-kafka 설치 경로로 이동 ( ex) cd C:\dev\kafka_2.11-1.1.0) ->  
+kafka 설치 경로로 이동  -> 
+>ex) cd C:\dev\kafka_2.11-1.1.0  
+
 bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test20190715 입력->  
 메시지 입력 ->  
   
