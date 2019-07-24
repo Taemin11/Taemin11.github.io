@@ -13,6 +13,9 @@ categories: java frameworks
 
 주키퍼 설치
 
+![zookeeper-install-1](https://user-images.githubusercontent.com/50867723/61754939-5a48fd80-adf0-11e9-8fcb-bb3ac0abd773.png)
+![zookeeper-install-2](https://user-images.githubusercontent.com/50867723/61755010-a98f2e00-adf0-11e9-9b6a-a2da9cde7ae4.png)
+
 주키퍼 설정
 
 주키퍼 실행
