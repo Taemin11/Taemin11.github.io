@@ -129,7 +129,7 @@ pom.xml에 의존성 추가 -> 저장 ->
 ### consumer 작성
   
 >consumer code와 producer code는 황준일님 블로그 [https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart) 를 참고했습니다.
-
+>configuration 참조 : [http://kafka.apache.org/081/documentation.html#producerconfigs](http://kafka.apache.org/081/documentation.html#producerconfigs)
 
 	package com.test.kafka.meta;
 	import org.apache.kafka.clients.consumer.ConsumerRecord;
