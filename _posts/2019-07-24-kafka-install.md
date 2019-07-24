@@ -107,29 +107,29 @@ consumer 메시지 수신 확인
 ### dependency 추가
    
 pom.xml에 의존성 추가 -> 저장 ->  
-'''
-<dependency>
-    	<groupId>org.apache.kafka</groupId>
-    	<artifactId>kafka-clients</artifactId>
-    	<version>1.1.0</version>
-	</dependency>
-	<dependency>
-	    <groupId>org.apache.kafka</groupId>
-	    <artifactId>kafka-streams</artifactId>
-	    <version>1.1.0</version>
-	</dependency>
-	<dependency>
-	    <groupId>org.apache.kafka</groupId>
-	    <artifactId>kafka_2.11</artifactId>
-	    <version>0.8.2.1</version>
-	</dependency>
-'''  
+
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>1.1.0</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.apache.kafka</groupId>
+			    <artifactId>kafka-streams</artifactId>
+			    <version>1.1.0</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.apache.kafka</groupId>
+			    <artifactId>kafka_2.11</artifactId>
+			    <version>0.8.2.1</version>
+			</dependency>
+
   
 ### consumer 작성
   
 >consumer code와 producer code는 황준일님 블로그에서 [https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart) 퍼왔습니다.
 
-'''
+
 package com.test.kafka.meta;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
@@ -137,71 +137,71 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class Consumer {
+		public class Consumer {
 
-    public static void main(String[] args) {
-        Properties configs = new Properties();
-        // 환경 변수 설정
-        configs.put("bootstrap.servers", "localhost:9092");     // kafka server host 및 port
-        configs.put("group.id", "testGroup");                // group id 설정
-        configs.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");    // key deserializer
-        configs.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");  // value deserializer
-        KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(configs);    // consumer 생성
-        consumer.subscribe(Arrays.asList("testTopic"));      // topic 설정
-        while (true) {  // 계속 loop를 돌면서 producer의 message를 띄운다.
-            ConsumerRecords<String, String> records = consumer.poll(500);
-            for (ConsumerRecord<String, String> record : records) {
-                String s = record.topic();
-                if ("testTopic".equals(s)) {
-                    System.out.println(record.value());
-                } else {
-                    throw new IllegalStateException("get message on topic " + record.topic());
-                }
-            }
-        }   
-    }
-    
-}
-'''  
+		    public static void main(String[] args) {
+			Properties configs = new Properties();
+			// 환경 변수 설정
+			configs.put("bootstrap.servers", "localhost:9092");     // kafka server host 및 port
+			configs.put("group.id", "testGroup");                // group id 설정
+			configs.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");    // key deserializer
+			configs.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");  // value deserializer
+			KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(configs);    // consumer 생성
+			consumer.subscribe(Arrays.asList("testTopic"));      // topic 설정
+			while (true) {  // 계속 loop를 돌면서 producer의 message를 띄운다.
+			    ConsumerRecords<String, String> records = consumer.poll(500);
+			    for (ConsumerRecord<String, String> record : records) {
+				String s = record.topic();
+				if ("testTopic".equals(s)) {
+				    System.out.println(record.value());
+				} else {
+				    throw new IllegalStateException("get message on topic " + record.topic());
+				}
+			    }
+			}   
+		    }
+
+		}
+  
   
 ### producer 작성
   
-'''
-package com.test.kafka.meta;
 
-import java.io.IOException;
-import java.util.Properties;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerRecord;
+		package com.test.kafka.meta;
 
-public class Producer {
+		import java.io.IOException;
+		import java.util.Properties;
+		import org.apache.kafka.clients.producer.KafkaProducer;
+		import org.apache.kafka.clients.producer.ProducerRecord;
 
-    public static void main(String[] args) throws IOException {
-    	// producer properties 설정
-        Properties configs = new Properties();
-        configs.put("bootstrap.servers", "localhost:9092"); 										// kafka host 및 server 설정
-        configs.put("retries", "1"); 																// 메시지 전송 실패 시 재전송
-        configs.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");	// serialize 설정
-        configs.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");	// serialize 설정
+		public class Producer {
 
-        // producer 생성
-        KafkaProducer<String, String> producer = new KafkaProducer<String, String>(configs);
-        
-        // message 전달
-        String v = "{\"logs\": "
-        		+ "[{\"test1\": \"val1\"},"
-        		+ "{\"test2\": \"val2\"}],"
-        		+ "\"version\":1}\n";
-        producer.send(new ProducerRecord<String, String>("testTopic", v));
-      
-        
-        // 종료
-        
-        producer.close();
-    }
+		    public static void main(String[] args) throws IOException {
+			// producer properties 설정
+			Properties configs = new Properties();
+			configs.put("bootstrap.servers", "localhost:9092"); 										// kafka host 및 server 설정
+			configs.put("retries", "1"); 																// 메시지 전송 실패 시 재전송
+			configs.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");	// serialize 설정
+			configs.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");	// serialize 설정
 
-}
-'''  
+			// producer 생성
+			KafkaProducer<String, String> producer = new KafkaProducer<String, String>(configs);
+
+			// message 전달
+			String v = "{\"logs\": "
+					+ "[{\"test1\": \"val1\"},"
+					+ "{\"test2\": \"val2\"}],"
+					+ "\"version\":1}\n";
+			producer.send(new ProducerRecord<String, String>("testTopic", v));
+
+
+			// 종료
+
+			producer.close();
+		    }
+
+		}
+  
 
 ### 실행
 
