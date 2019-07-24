@@ -51,5 +51,5 @@ ex) dataDir=C:\dev\zookeeper-3.4.14\data
    
 ### 실행이 안 될 경우
 
-환경 변수 설정 
+java path 문제 시 [환경 변수 설정](https://taemin11.github.io/java/framework/EnvironmentValueSetting/) 참고
 
