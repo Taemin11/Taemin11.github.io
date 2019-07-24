@@ -178,8 +178,8 @@ pom.xml에 의존성 추가 -> 저장 ->
 	    public static void main(String[] args) throws IOException {
 		// producer properties 설정
 		Properties configs = new Properties();
-		configs.put("bootstrap.servers", "localhost:9092"); 										// kafka host 및 server 설정
-		configs.put("retries", "1"); 																// 메시지 전송 실패 시 재전송
+		configs.put("bootstrap.servers", "localhost:9092"); 						// kafka host 및 server 설정
+		configs.put("retries", "1"); 									// 메시지 전송 실패 시 재전송
 		configs.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");	// serialize 설정
 		configs.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");	// serialize 설정
 
