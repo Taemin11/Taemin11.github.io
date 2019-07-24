@@ -36,7 +36,7 @@ ex) C:\dev\zookeeper-3.4.14\data
 
 ![zookeeper-install-3](https://user-images.githubusercontent.com/50867723/61755589-4d79d900-adf3-11e9-9dc0-03876953b009.png)
 
-C:\dev\zookeeper-3.4.14\conf 경로에 있는 zoo_sample.cfg 복사 붙이기 -> 복사본 이름 zoo.cfg로 변경 ->
+C:\dev\zookeeper-3.4.14\conf 경로에 있는 zoo_sample.cfg 복사 붙이기 -> 복사본 이름 zoo.cfg로 변경 ->   
 ![zookeeper-install-4](https://user-images.githubusercontent.com/50867723/61755614-65515d00-adf3-11e9-9b51-cb20dd9e239d.png)
 
 zoo.cfg를 notepad++ 나 메모장 같은 텍스트 편집기를 이용하여 오픈 -> data 경로 추가  
@@ -53,5 +53,5 @@ ex) dataDir=C:\dev\zookeeper-3.4.14\data
 
 ### 실행이 안 될 경우
 
-환경 
+환경 변수 설정  
 
