@@ -4,8 +4,6 @@ date: 2019-07-24 08:42
 categories: java frameworks
 ---
 
-# Windows 환경에서 Zookeeper 설치 및 실행
-
 목차  
 >+ [1. 주키퍼 설치](#주키퍼-설치)  
 >+ [2. 주키퍼 설정](#주키퍼-설정)  
